@@ -17,3 +17,10 @@ html {
   left: 0;
   right: 0;
 }
+.buttons, .axes {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
