@@ -44,3 +44,16 @@ function buttons (arr) {
     )
   })
 }
+
+function axes (arr) {
+  return arr.map((axis, idx) => {
+    var pressed = axis < -0.15 || axis > 0.15 ? '.pressed' : ''
+    return x('.axis')(
+      x(`span.button${pressed}`)(idx),
+      x(`meter${pressed}`)(
+        { min: -1, max: 1, value: axis },
+        `${idx}: ${axis.toFixed(4)}`
+      )
+    )
+  })
+}
