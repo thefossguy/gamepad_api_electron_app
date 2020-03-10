@@ -1,0 +1,19 @@
+html {
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-family: menlo, inconsolata, system-ui, sans-serif;
+}
+* {
+  cursor: default;
+  user-select: none;
+}
+#app {
+  margin: 14px;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
