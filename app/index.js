@@ -28,3 +28,19 @@ function view (state, emit) {
       )
   )
 }
+
+function buttons (arr) {
+  return arr.map((button, idx) => {
+    var pressed = button === 1.0
+    var val = button
+    if (typeof button === 'object') {
+      pressed = button.pressed
+      val = button.value
+    }
+    var pct = `${Math.round(val * 100)}%`
+    return x(`.button${pressed ? '.pressed' : ''}`)(
+      { style: `background-size: ${pct} ${pct}` },
+      idx
+    )
+  })
+}
