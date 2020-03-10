@@ -57,3 +57,31 @@ function axes (arr) {
     )
   })
 }
+
+function store (state, emitter) {
+  state.controllers = {}
+  state.requestId = null
+
+  window.addEventListener('gamepadconnected', ({ gamepad }) => {
+    state.controllers[gamepad.index] = gamepad
+    emitter.emit('render')
+  })
+
+  window.addEventListener('gamepaddisconnected', ({ gamepad }) => {
+    delete state.controllers[gamepad.index]
+    emitter.emit('render')
+  })
+
+  function scanGamepads () {
+    var gamepads = navigator.getGamepads()
+
+    Array.from(gamepads).forEach(gamepad => {
+      if (gamepad) state.controllers[gamepad.index] = gamepad
+    })
+
+    emitter.emit('render')
+    window.requestAnimationFrame(scanGamepads)
+  }
+
+  scanGamepads()
+}
