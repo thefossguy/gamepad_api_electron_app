@@ -56,3 +56,10 @@ html {
   width: 160px;
   height: 3rem;
 }
+.axis meter::-webkit-meter-bar {
+  background: #333;
+  border: 1px solid #999;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  overflow: hidden;
+}
