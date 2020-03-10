@@ -1,0 +1,24 @@
+{
+  "name": "gamepad-api-tester",
+  "description": "Its an electron app to use various types of gamepads into your cross platform electron app ",
+  "version": "1.0.0",
+  "author": "Shivansh Yadav <shivanshyadav20@gmail.com> (http://shivansh.cc/)",
+  "dependencies": {
+    "electron-context-menu": "^0.9.1",
+    "hyperaxe": "^1.0.1",
+    "nanochoo": "^6.8.0",
+    "style.css": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron": "^1.8.2",
+    "standard": "^11.0.0"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "fmt": "standard --fix",
+    "start": "electron index.js",
+    "test": "standard"
+  }
+}
