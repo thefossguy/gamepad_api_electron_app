@@ -63,3 +63,8 @@ html {
   border-radius: 0 5px 5px 0;
   overflow: hidden;
 }
+.axis meter.pressed::-webkit-meter-bar { border-color: white }
+.axis meter::-webkit-meter-optimum-value {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==)
+}
+.title { font-size: 18px }
