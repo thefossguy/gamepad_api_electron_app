@@ -1,6 +1,6 @@
 html {
   background: black;
-  color: white;
+  color: black;
   font-size: 16px;
   font-family: menlo, inconsolata, system-ui, sans-serif;
 }
@@ -25,8 +25,8 @@ html {
   align-items: center;
 }
 .gamepad {
-  border: 1px solid #333;
-  background: #222;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   padding: 1em;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -37,15 +37,15 @@ html {
   align-items: center;
   height: 3rem;
   width: 3rem;
-  background: #333;
+  background: rgb(255, 255, 255);
   border-radius: 5px;
-  border: 1px solid #999;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==);
+  border: 1px solid rgb(0, 0, 0);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8ocD7EwAFXQIg521gpQAAAABJRU5ErkJggg==);
   background-size: 0% 0%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.button.pressed { border: 1px solid white }
+.button.pressed { border: 1px solid rgb(0, 0, 0) }
 .axis { display: flex }
 .axis .button {
   border-radius: 5px 0 0 5px;
@@ -57,14 +57,14 @@ html {
   height: 3rem;
 }
 .axis meter::-webkit-meter-bar {
-  background: #333;
-  border: 1px solid #999;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   border-left: none;
   border-radius: 0 5px 5px 0;
   overflow: hidden;
 }
-.axis meter.pressed::-webkit-meter-bar { border-color: white }
+.axis meter.pressed::-webkit-meter-bar { border-color: rgb(0, 0, 0) }
 .axis meter::-webkit-meter-optimum-value {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==)
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8ocD7EwAFXQIg521gpQAAAABJRU5ErkJggg==)
 }
 .title { font-size: 18px }
