@@ -10,7 +10,7 @@
     "style.css": "^1.0.0"
   },
   "devDependencies": {
-    "electron": "^1.8.2",
+    "electron": "^7.2.4",
     "standard": "^11.0.0"
   },
   "license": "ISC",
